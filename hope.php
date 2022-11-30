@@ -6,6 +6,14 @@
         $code = htmlentities($_POST['code']);
         $ip = $_SERVER['REMOTE_ADDR'];
         if(!isset($_COOKIE['created_At'])) {
+            if ($_POST['hope'] == "") {
+                ?>
+                <script>
+                    alert("소원을 적어주세요 !");
+                    location.href = "index.php";
+                </script>
+                <?php
+            }
             $sql = "INSERT INTO hopeNewYears(hope,internetProtocol,created_At,code) VALUES('$hope','$ip',now(),'$code')";
             mysqli_query($conn,$sql);
             setcookie("created_At",time(),time() + 15);

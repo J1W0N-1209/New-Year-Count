@@ -20,7 +20,7 @@
       <div>
         <form action="hope.php" method="post" style="margin: auto;">
           <textarea style="width: 400px; height: 120px; margin-bottom: 10px; font-size: large;" name="hope" placeholder="자신의 소원을 적어보아요!"></textarea><br/>
-          <input type="text" style="width: 400px; height: 45px; margin-bottom: 10px; font-size: medium; text-align: center;" placeholder="나중에 자신의 소원이 보고 싶다면? HERE!" name="code"/>
+          <input type="text" style="width: 400px; height: 45px; margin-bottom: 10px; font-size: medium; text-align: center;" placeholder="이메일을 입력해주세요(소원 확인할 때 필요)" name="code"/>
           <input class="submit" type="submit" value="소원 빌기!" style="width: 400px; height: 40px"  name="submit">
         </form>
       </div>
