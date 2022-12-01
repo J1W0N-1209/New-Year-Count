@@ -1,8 +1,8 @@
 <?php
-    $host= "terminal.kro.kr";
-    $username = "cth";
-    $password = "xogur38997";
-    $db_name = "new-year-count";
+    $host= "";
+    $username = "";
+    $password = "";
+    $db_name = "";
 
     $conn = mysqli_connect($host,$username,$password,$db_name);
     
